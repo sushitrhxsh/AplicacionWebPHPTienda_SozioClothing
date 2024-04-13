@@ -1,0 +1,12 @@
+main > .container{
+    padding: 30px 0;
+}
+
+.imagen-responsive{
+    position: relative;
+    width: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
