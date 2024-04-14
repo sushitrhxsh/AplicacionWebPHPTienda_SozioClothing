@@ -5,7 +5,6 @@ require 'classes/clienteFunciones.php';
 
 $db = new Database();
 $conn  = $db->conectar();
-
 $errors = [];
 
 if(!empty($_POST)){
@@ -66,22 +65,15 @@ if(!empty($_POST)){
     }
 }
 
-
-
-
 ?>
 
 <!doctype html>
 <html lang="es">
-
     <head>
     <title>Sozio Clothing Co</title>
-    
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- Favicon logo html  -->
@@ -90,7 +82,7 @@ if(!empty($_POST)){
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
-    <style>
+    <style type="text/css">
         .form-login{
             max-width: 350px;
         }
@@ -206,12 +198,11 @@ if(!empty($_POST)){
     
 
 
-
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    
-    <script>
+    <!-- Javascript -->
+    <script type="text/javascript">
         let txtUsuario = document.getElementById('usuario')
         txtUsuario.addEventListener("blur",function(){
             existeUsuario(txtUsuario.value)

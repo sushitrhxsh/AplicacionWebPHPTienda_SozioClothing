@@ -1,7 +1,6 @@
 <?php 
 use PHPMailer\PHPMailer\{PHPMailer,SMTP,Exception};
 
-
 require '/tienda_ropa/includes/phpmailer/src/PHPMailer.php';
 require '/tienda_ropa/includes/phpmailer/src/SMTP.php';
 require '/tienda_ropa/includes/phpmailer/src/Exception.php';

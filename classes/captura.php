@@ -1,6 +1,7 @@
 <?php 
 require '../config/config.php';
 require '../config/conexion.php';
+
 $db = new Database();
 $conn  = $db->conectar();
 
@@ -12,7 +13,6 @@ $datos = json_decode($json, true);
 echo "</pre>";*/
 
 if(is_array($datos)){
-
     $id_transaccion = $datos['detalles']['id'];
     $total = $datos['detalles']['purchase_units'][0]['amount']['value'];
     $status = $datos['detalles']['status'];
@@ -47,7 +47,5 @@ if(is_array($datos)){
         unset($_SESSION['carrito']);
     }
 }
-
-
 
 ?>

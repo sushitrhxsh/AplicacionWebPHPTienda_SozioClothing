@@ -7,7 +7,6 @@ MercadoPago\SDK::setAccessToken(TOKEN_MP);
 $preference = new MercadoPago\Preference();
 $productos_mp = array();
 
-
 $db = new Database();
 $conn  = $db->conectar();
 
@@ -35,15 +34,11 @@ $conn  = $db->conectar();
 
 <!doctype html>
 <html lang="es">
-
     <head>
     <title>Sozio Clothing Co</title>
-    
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- Favicon logo html  -->
@@ -53,8 +48,8 @@ $conn  = $db->conectar();
         <!-- SDK MercadoPago.js-->
         <script src="https://sdk.mercadopago.com/js/v2"></script>
         <!--  Paypal Boton  -->
-    <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&currency=<?PHP echo CURRENCY; ?>"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&currency=<?PHP echo CURRENCY; ?>"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
 
     <body>
@@ -202,16 +197,14 @@ $preference->auto_return = "approved";
 $preference->binary_mode = true;
 $preference->save();
 
-    
 ?>
-
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    
-    <script>
-    //Boton de paypal
+    <!-- Javascript -->
+    <script type="text/javascript">
+        //Boton de paypal
         paypal.Buttons({
             style:{
                 color:'blue',
@@ -252,7 +245,7 @@ $preference->save();
             }
         }).render('#paypal-button-container');
         
-    //Boton Mercado pago
+        //Boton Mercado pago
         const mp = new MercadoPago('TEST-3fb31ae2-c4a4-4832-ae6d-9cadb40da306',{
             locale: 'es-MX'
         });
@@ -264,13 +257,9 @@ $preference->save();
                 container: '.checkout-btn',
                 label: 'Pagar con Mercado Pago'
             }
-        })
-
+        });
 
     </script>
-
-
-
 
     </body>
 

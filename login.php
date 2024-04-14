@@ -1,15 +1,13 @@
 <?php
-require './config/config.php';
-require './config/conexion.php';
-require './classes/clienteFunciones.php';
+require 'config/config.php';
+require 'config/conexion.php';
+require 'classes/clienteFunciones.php';
 
 $db = new Database();
 $conn  = $db->conectar();
-
 $errors = [];
 
 if(!empty($_POST)){
-
     $usuario = trim($_POST['usuario']);
     $password = trim($_POST['password']);    
 
@@ -22,15 +20,13 @@ if(!empty($_POST)){
     }
 
 }
+
 ?>
 
 <!doctype html>
 <html lang="es">
-
     <head>
     <title>Sozio Clothing Co</title>
-    
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,7 +39,7 @@ if(!empty($_POST)){
         <link src="/tienda_ropa/css/estilos.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
-    <style>
+    <style type="text/css">
         .form-login{
             max-width: 350px;
         }
@@ -86,7 +82,6 @@ if(!empty($_POST)){
                         </ul>
                         <a class="btn btn-warning me-2" href="checkout-carrito.php"><i class="bi bi-cart3"></i><span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?><span></a>
                         
-                        
                         <?php if(isset($_SESSION['user_id'])){ ?>
                                 <div class="dropdown">
                                 <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-heart"> <?php echo $_SESSION['user_name'];?></i></a>
@@ -98,7 +93,7 @@ if(!empty($_POST)){
                                   </ul>
                                 </div>
                             
-                        <?php }else{ ?>
+                        <?php } else { ?>
                             <a class="btn btn-light"  href="login.php"><i class="bi bi-person-fill"> Ingresar</i></a>
                         <?php }?>
                     </div>

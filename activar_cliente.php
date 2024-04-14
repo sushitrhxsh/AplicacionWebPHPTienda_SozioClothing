@@ -1,5 +1,4 @@
 <?php 
-
 require 'config/config.php';
 require 'config/conexion.php';
 require 'classes/clienteFunciones.php';

@@ -5,12 +5,10 @@ require('../config/conexion.php');
 //$datos = array();
 
 if(isset($_POST['action'])){
-
     $action = $_POST['action']; 
     $id = isset( $_POST['id']) ? $_POST['id']: 0; 
 
         if($action == 'agregar'){
-
             $cantidad = isset( $_POST['cantidad']) ? $_POST['cantidad']: 0;
             $respuesta = agregar($id,$cantidad);
                 if($respuesta > 0){
@@ -21,9 +19,9 @@ if(isset($_POST['action'])){
                 
             $datos['sub'] = MONEDA . number_format($respuesta, 2, '.',',');
 
-        }elseif($action == 'eliminar'){
+        } elseif($action == 'eliminar') {
             $datos['ok'] = eliminar($id);
-        }else{
+        } else {
             $datos['ok'] = false;
         }
 }else{
@@ -33,6 +31,9 @@ if(isset($_POST['action'])){
 //regresar la peticion a json
 echo json_encode($datos);
 
+/* ************************************************************** *
+ *                          Funciones                             * 
+ * ************************************************************** */
     function agregar($id,$cantidad){
         $res = 0;
         if($id > 0 && $cantidad > 0 && is_numeric(($cantidad))){
@@ -68,6 +69,5 @@ echo json_encode($datos);
             return false;
         }
     }
-
 
 ?>

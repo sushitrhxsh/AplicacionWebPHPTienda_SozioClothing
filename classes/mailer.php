@@ -15,15 +15,15 @@ class Mailer {
             // Server settings
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
-            $mail->Host       = 'smtp.office365.com';
+            $mail->Host       = 'smtp.gmail.com'; //'smtp.office365.com'; // host de envio gmail o outlook
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'l19260901@matamoros.tecnm.mx'; //mis credenciales
-            $mail->Password   = 'xoq14770';
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port       = 587;
+            $mail->Username   = ''; // Tu correo personal ya sea gmail o outlook
+            $mail->Password   = ''; // Contrasenia de gmail (debe estar ya configurado para enviar por correos desde gmail) si es de outlook solo ponle la contrasenia que tienes en ese correo y ya
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //ENCRYPTION_STARTTLS; //seguridad de envio de correos
+            $mail->Port       = 465; //587;
 
             // Recipients
-            $mail->setFrom('l19260901@matamoros.tecnm.mx', 'Tienda sozioclothing');
+            $mail->setFrom('', 'Tienda sozioclothing'); // poner el correo principal de donde se vaa enviar
             $mail->addAddress($email, 'Joe User');
 
             // Content
@@ -43,7 +43,5 @@ class Mailer {
         }
     }
 }
-
-
 
 ?>

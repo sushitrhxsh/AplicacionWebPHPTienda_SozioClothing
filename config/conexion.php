@@ -1,7 +1,5 @@
 <?php 
-
 class Database{
-
     private $hostname ="localhost";
     private $username = "root";
     private $password = "";
@@ -9,7 +7,7 @@ class Database{
     private $charset = "utf8";
     
     function conectar(){
-        try{
+        try {
             $conexion = "mysql:host=". $this->hostname.";dbname=".$this->database .";charset=".$this->charset;
 
             $options = [  
@@ -21,7 +19,7 @@ class Database{
             $pdo = new PDO($conexion,$this->username,$this->password,$options);
             return $pdo;
             
-        }catch(PDOException $e){
+        } catch(PDOException $e) {
             echo 'error conexion: ' . $e->getMessage();
             exit;
         }

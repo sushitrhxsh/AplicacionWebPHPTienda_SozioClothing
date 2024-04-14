@@ -28,20 +28,15 @@ if($id_transaccion == ''){
     }
 }
 
-
 ?>
 
 <!doctype html>
 <html lang="es">
-
     <head>
     <title>Sozio Clothing Co</title>
-    
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- Favicon logo html  -->
@@ -87,7 +82,6 @@ if($id_transaccion == ''){
                             </li>
                         </ul>
                         <a class="btn btn-warning me-2" href="checkout-carrito.php"><i class="bi bi-cart3"></i><span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?><span></a>
-                        
                         
                         <?php if(isset($_SESSION['user_id'])){ ?>
                                 <div class="dropdown">
@@ -151,5 +145,7 @@ if($id_transaccion == ''){
                 <?php } ?>
             </div>
         </main>
-</body> 
+
+    </body> 
+
 </html>

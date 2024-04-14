@@ -1,14 +1,10 @@
 <!doctype html>
 <html lang="es">
-
     <head>
     <title>Sozio Clothing Co</title>
-    
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- Favicon logo html  -->
@@ -22,7 +18,7 @@
         <header>
             <div class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
-                <img src="img/favicon/logo_sozioheader.png"  width="60" alt="Sozio Clothing logo">
+                    <img src="img/favicon/logo_sozioheader.png"  width="60" alt="Sozio Clothing logo">
                     <a href="index.php" class="navbar-brand">
                         <strong>Sozio Clothing</strong>
                     </a>
@@ -38,27 +34,23 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contactanos</i></a>
                             </li>
-                        </ul>
-                      
-                        
-                       
+                        </ul>   
                     </div>
                 </div>
             </div>
         </header>
-        <style>
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-        }
-
-        section {
-            max-width: 600px;
-            text-align: center;
-        }
-    </style>
+        <style type="text/css">
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+            }
+            section {
+                max-width: 600px;
+                text-align: center;
+            }
+        </style>
         
         <!-- Contenido -->
         <main>
@@ -71,29 +63,22 @@
             </section>
         </main>
     
-    <footer style="text-align: center; margin-top: 50px;">
-        
-              <h2>¡Contáctanos! 🐱‍💻</h2>
-              <b>Estamos aquí para ayudarte. Puedes encontrarnos en nuestras redes sociales:</b>
-                <div class="social-media-icons">
-                    <a href="https://www.facebook.com/sozio.clothing" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/SozioClothing" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/sozio.clothing" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>&copy; 2023 sozioclothing. Todos los derechos reservados.</p>
-        
-    </footer>     
+        <footer style="text-align: center; margin-top: 50px;">
+                <h2>¡Contáctanos! 🐱‍💻</h2>
+                <b>Estamos aquí para ayudarte. Puedes encontrarnos en nuestras redes sociales:</b>
+                    <div class="social-media-icons">
+                        <a href="https://www.facebook.com/sozio.clothing" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/SozioClothing" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sozio.clothing" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>&copy; 2023 sozioclothing. Todos los derechos reservados.</p>
+        </footer>     
       
-    
-
-
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     
-   
-
     </body>
 
 </html>

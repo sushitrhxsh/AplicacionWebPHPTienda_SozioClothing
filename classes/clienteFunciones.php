@@ -1,5 +1,7 @@
 <?php 
-//FUNCIONES PARA VALIDAR Y GENERAR
+/***********************************************************
+ * FUNCIONES PARA VALIDAR Y GENERAR                        *
+ ***********************************************************/
 function esNulo(array $parametros){
     foreach($parametros as $parametro){
         if(strlen(trim($parametro)) < 1){
@@ -26,7 +28,10 @@ function validaPassword($password,$repassword){
 function generarToken(){
     return md5(uniqid(mt_rand(),false));
 }
-// FUNCIONES PARA SQL
+
+/*************************************************************
+ *              FUNCIONES PARA SQL                           *
+ *************************************************************/
 function registraCliente(array $datos, $conn){
     $sql = $conn->prepare("INSERT INTO clientes (nombre,apellidos,email,telefono,dni,estatus,fecha_alta) VALUES (?,?,?,?,?,1,now())");
     if($sql->execute($datos)){
@@ -150,5 +155,6 @@ function cambioPassword($user_id,$password,$conn){
     }
     return null;
 }
+/* ******************************************************* */
 
 ?>
